@@ -51,14 +51,12 @@ function App() {
       ),
     );
   }
-
-
   
   return (
     <TodoTemplate>
       <ToDoInsert onInsert={onInsert} />
       <TodoList
-        todos={todos}
+        todos={todos} //props
         onToggle={onToggle}
         onRemove={onRemove}
         onChangeSelectedTodo={onChangeSelectedTodo}
